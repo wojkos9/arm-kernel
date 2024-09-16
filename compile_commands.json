@@ -1,0 +1,44 @@
+[
+ {
+  "directory": "/home/w/repos/arm/kernel",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mcpu=cortex-a15",
+   "-nostdlib",
+   "-nostartfiles",
+   "-ffreestanding",
+   "-std=c99",
+   "-I",
+   "./printf",
+   "-DPRINTF_DISABLE_SUPPORT_FLOAT",
+   "-DPRINTF_DISABLE_SUPPORT_LONG_LONG",
+   "-c",
+   "main.c",
+   "-o",
+   "main.o"
+  ],
+  "file": "main.c"
+ },
+ {
+  "directory": "/home/w/repos/arm/kernel",
+  "arguments": [
+   "arm-none-eabi-gcc",
+   "-g",
+   "-mcpu=cortex-a15",
+   "-nostdlib",
+   "-nostartfiles",
+   "-ffreestanding",
+   "-std=c99",
+   "-I",
+   "./printf",
+   "-DPRINTF_DISABLE_SUPPORT_FLOAT",
+   "-DPRINTF_DISABLE_SUPPORT_LONG_LONG",
+   "-c",
+   "printf/printf.c",
+   "-o",
+   "printf/printf.o"
+  ],
+  "file": "printf/printf.c"
+ }
+]
