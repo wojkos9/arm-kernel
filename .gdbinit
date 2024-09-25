@@ -1,5 +1,5 @@
-target remote :1234
-la asm
+target remote :1235
+la spl
 foc c
-b start
-c
+#b _start
+#c
